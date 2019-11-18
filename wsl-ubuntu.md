@@ -1,0 +1,53 @@
+## curl 
+```
+sudo apt-get install curl
+```
+
+## node 
+```bash
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+> 此种方法, 会自动同时安装npm
+
+## npm
+```
+sudo apt install npm  // 安装npm
+sudo npm install npm@latest -g  // 升级到最新版
+sudo npm install npm -g  // 升级npm
+sudo npm install -g n   // 用于安装node.js的模块
+```
+
+## git 
+```
+sudo apt-get install git
+```
+
+
+## zsh & oh-my-zsh
+[Ubuntu 16.04下安装zsh和oh-my-zsh](https://www.cnblogs.com/easonjim/p/7863099.html)
+### 安装zsh
+```
+sudo apt-get install zsh
+```
+
+### 把默认的Shell改成zsh(不要使用sudo)
+```
+chsh -s /bin/zsh
+```
+
+### 安装oh-my-zsh
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+### 安装zsh-syntax-highlighting语法高亮插件
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
+### 安装zsh-autosuggestions语法历史记录插件
+```
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
