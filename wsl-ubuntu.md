@@ -58,3 +58,19 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
+### 重置密码
+1. 打开powershell, 输入以下命令, 将ubuntu默认用户设置为*root*
+```bash
+ubuntu config --default-user root
+```
+2. 打开ubuntu, 并输入以下命令, 假如你的Ubuntu中的用户名为*jicemoon*
+```bash
+passwd jicemoon
+```
+3. 根据提示, 输入并确认新的密码, 关闭ubuntu
+4. 在powershell中, 输入以下命令, 将ubuntu默认用户设置为*jicemoon*
+```bash
+ubuntu config --default-user jicemoon
+```
+5. 重新打开ubuntu, 测试密码是否修改成功
+
