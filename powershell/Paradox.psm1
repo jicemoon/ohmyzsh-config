@@ -21,10 +21,21 @@ function Write-Theme {
         $prompt += Write-Prompt -Object "$($sl.PromptSymbols.ElevatedSymbol) " -ForegroundColor $sl.Colors.AdminIconForegroundColor -BackgroundColor $sl.Colors.SessionInfoBackgroundColor
     }
 
-    $user = $sl.CurrentUser
-    $computer = $sl.CurrentHostname
-    $path = Get-FullPath -dir $pwd
-
+    # $user = $sl.CurrentUser
+    # $computer = $sl.CurrentHostname
+    $pathFull = Get-FullPath -dir $pwd
+    try {
+        $path = Split-Path $pathFull -Leaf
+        if (!(Split-Path $path -IsAbsolute)) {
+            $path2 = Split-Path $pathFull -Parent
+            $path2 = Split-Path $path2 -Leaf
+    
+            $path = Join-Path -Path $path2 -ChildPath $path
+        }
+    }
+    catch {
+        $path = $pathFull
+    }
     $timeStamp = Get-Date -Format "HH:mm:ss"
     $timestamp = " $timeStamp "
 
