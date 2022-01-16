@@ -41,3 +41,6 @@ Set-ExecutionPolicy RemoteSigned
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
 ```
+
+
+[Themes](https://ohmyposh.dev/docs/themes)
