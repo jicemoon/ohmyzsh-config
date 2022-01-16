@@ -1,6 +1,7 @@
 ```powershell
 Install-Module posh-git
 Install-Module oh-my-posh
+Install-Module PSColor
 Install-Module -Name PSReadLine -Force -SkipPublisherCheck
 ```
 
