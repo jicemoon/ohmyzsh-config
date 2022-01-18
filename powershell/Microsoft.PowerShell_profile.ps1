@@ -8,7 +8,7 @@ function mkfile($file) { "" | Out-File $file -Encoding ASCII }
 Import-Module -Name 'PSColor'
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme Paradox
+Set-PoshPrompt -Theme markbull
 
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
