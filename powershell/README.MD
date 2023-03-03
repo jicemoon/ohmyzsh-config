@@ -10,6 +10,11 @@ Install-Module -Name PSReadLine -Force -SkipPublisherCheck
 C:\Users\[user]\Documents\WindowsPowerShell
 ```
 
+
+```
+C:\Users\jicemoon\AppData\Local\oh-my-posh
+```
+
 ## 安装字体
 > * [PowerLine](https://github.com/powerline/fonts)
 > * [Fira Code](https://github.com/tonsky/FiraCode)
