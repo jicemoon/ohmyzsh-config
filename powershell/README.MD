@@ -12,7 +12,7 @@ C:\Users\[user]\Documents\WindowsPowerShell
 
 
 ```
-C:\Users\jicemoon\AppData\Local\oh-my-posh
+C:\Users\[user]\AppData\Local\oh-my-posh
 ```
 
 ## 安装字体
